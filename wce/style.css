@@ -1,0 +1,358 @@
+/* Imports */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* General Setup */
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, li, input, a {
+    font-family: 'Nunito', monospace;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, input, a {
+    font-size: 2rem;
+}
+
+
+/* Header Layout */
+header {
+    background: #676167;
+    color: black;
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 50px;
+}
+
+header a {
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    outline: none;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 2px solid #a5b5b7;
+    text-align: center;
+}
+
+header a:visited, header a:link, header a:focus {
+    color: #a5b5b7;
+}
+
+header a:hover {
+    color: white;
+}
+
+/* Main Layout */
+main {
+    margin: 0;
+}
+
+main section {
+    padding: 180px 15px;
+    padding-top: 80px;
+}
+
+main section:nth-child(even) {
+    background: white;
+    color: black;
+}
+
+
+main section:nth-child(odd) {
+    background: #676167;
+    color: white;
+}
+
+main section .elements {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 800px;
+    text-align: center;  
+}
+
+main section .elements * {
+    margin: 50px 0;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+
+main .button {
+    outline: none;
+    color: white;
+    background: rgb(197, 2, 2);
+    border-radius: 3px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+main .button:hover {
+    background: rgb(255, 0, 0);
+}
+
+/* Home Section */
+#home h2 {
+    font-size: 5rem;
+}
+
+/* About Section */
+#about h3 {
+    font-size: 2rem;
+}
+
+#about .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.flexbox p {
+    max-width: 450px;
+    margin: 30px;
+    text-align: left;
+}
+
+/* Courses Section */
+.courses-types { 
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.courses-types-col {
+    flex: 1 300px;
+    background: #E0E0E0;
+    margin: 10px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.courses-types-col span {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Students Testimonials Section */
+.students {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.students-col {
+    background: rgb(168, 168, 168);
+    text-align: center;
+    margin: 20px 15px;
+    padding: 10px;
+    width: 250px;
+}
+
+.students-col p {
+    font-size: 1.5rem;
+    margin: 40px 20px;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.students-col img {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Pricing Section */
+.pricing-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.pricing-courses-col {
+    border: 2px solid grey;
+    margin: 20px 15px;
+    padding: 40px 50px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.pricing-courses-col h3, .pricing-courses-col span {
+    font-weight: 700;
+}
+
+.pricing-courses-col h3 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pricing-courses-col span {
+    font-size: 2.5rem;
+}
+
+.pricing-courses-col hr {
+    margin-top: 30px;
+}
+
+.pricing-courses-col p {
+    text-align: left;
+    margin: 45px;
+}
+
+/* Footer */
+footer {
+    background: #676167;
+    padding: 20px 40px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.footer-col {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer-col h3 {
+    padding: 0 20px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.footer-col ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-col ul li {
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #c0c0c0;
+}
+
+.footer-col ul li:hover {
+    color: white;
+}
+
+.footer-col.social a {
+    font-size: 3rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.footer-col.social a:hover {
+    color: white;
+}
+
+.rights {
+    text-align: center;
+}
+
+.rights p, .rights a {
+    color: #c0c0c0;
+}
+
+.rights a {
+    text-decoration: none;
+}
+
+.rights a:hover {
+    color: white;
+}
+
+/* Media Queries */
+
+/* Header Queries */
+@media screen and (min-width: 600px) {
+    header, header ul {
+        display: flex;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 15px;
+    }
+
+    header nav a {
+        border: 0;
+        font-size: 1.4rem;
+        padding: 7px;
+        text-align: initial;
+    }
+
+    .footer-col {
+        text-align: initial;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #home h2 {
+        font-size: 8rem;
+    }
+
+    header ul {
+        margin-right: 100px;
+    }
+
+}
+

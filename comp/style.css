@@ -1,0 +1,510 @@
+/* General Setup */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Teko', sans-serif;
+}
+
+p, li, input, a {
+    font-family: 'Courier Prime', monospace;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p, li, input, a {
+    font-size: 2rem;
+}
+
+
+/* Header Layout */
+header {
+    background: black;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    font-size: 3.5rem;
+    padding: 30px;
+}
+
+header ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    position: relative;
+    display: block;
+    outline: none;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .animation {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background: white;
+    transition: all .5s ease 0s;
+}
+
+header a:visited, header a:link, header a:focus {
+    color: rgb(168, 168, 168);
+}
+
+header a:hover {
+    color: white;
+}
+
+
+/* Main Layout */
+main {
+    margin: 10px 0;
+}
+
+main section {
+    padding: 70px 20px;
+}
+
+main section:nth-child(even) {
+    background: black;
+    color: white;
+}
+
+main section:nth-child(odd) {
+    background: white;
+}
+
+main h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home Layout*/
+
+main section.home {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -90px;;
+    margin-top: -10px;
+}
+
+.home-col-text {
+    margin-top: 10px;
+    padding: 0 20px;
+    padding-left: 550px;
+    text-align: right;
+}
+
+.home-col-text > * {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.home h3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 10rem;    
+}
+
+.home p {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.home a {
+    display: inline-block;
+    font-size: 4rem;
+    border: 1px solid;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    background: black;
+    color: white;
+    transition: .5s all;
+}
+
+/* About Layout */
+#about {
+    padding: 70px 100px;
+}
+
+#about h3, #about p, #about a {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#about h3 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#about p {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+#about a {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+#about a:hover {
+    background: white;
+    color: black;
+    transition: .5s all;
+}
+
+/* Services Layout */
+#services {
+    padding: 70px 100px;
+}
+
+#services h2 + p {
+    text-align: center;
+    color: gray;
+}
+
+.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+
+.services-col {
+    flex: 1 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+.services-col i {
+    font-size: 3.5rem;
+}
+
+.services-col p {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Our Team Layout */
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-member {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.team-member h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.team-member img {
+    background: gray;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+
+/* Contact Layout*/
+#contact p {
+    text-align: center;
+    color: gray;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.form-input, .form-submit {
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    color: black;
+    transition: .5s all;
+}
+
+.form-input:hover, .form-submit:hover {
+    background: black;
+    color: white;
+}
+
+.form-input {
+    border-bottom: 0;
+}
+
+textarea.form-input {
+    resize: none;
+    height: 150px;
+    line-height: 2;
+}
+
+.form-submit {
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer .col {
+    flex: 1;
+    margin: 0 30px;
+    padding: 15px 0;
+}
+
+footer .col h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer .col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .col li {
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+footer .col li:hover {
+    color: white;
+}
+
+footer .col.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .col.social li {
+    display: inline-block;
+}
+
+footer .col.social a {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+}
+
+footer .col.social a.fa-facebook:hover {
+    color: #4646df;
+}
+
+footer .col.social a.fa-instagram:hover {
+    color: #ff009d;
+}
+
+footer .col.social a.fa-twitter:hover {
+    color: #00e1ff;
+}
+
+footer .col.social a.fa-linkedin:hover {
+    color: #4646df;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer .copyright a {
+    color: gray;
+    font-style: italic;
+}
+
+/* Media Queries */
+
+/* Home Queries */
+
+@media screen and (max-width: 1221px) {
+    main section.home {
+        background-position: center;
+    }
+    
+    .home h3 {
+        font-size: 5rem;
+    }
+    
+    .home p {
+        font-size: 2.5rem;
+    }
+    
+    .home a {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 795px) {
+    header .logo, header a {
+        text-align: center;
+    }
+
+    header a {
+        border-top: 1px solid white;
+    }
+
+    #about, #services {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    main section.home {
+        background-position: left;
+        height: 400px;
+    }
+    
+    .home-col-text {
+        padding: 30px;
+        padding-left: 350px;
+    }
+    
+    .home h3, .home p, .home a {
+        font-size: 2rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 539px) {
+    .home-col-text {
+        display: none;
+    }
+
+    footer .col {
+        text-align: center;
+    }
+}
+
+
+/* Header Queries */
+@media screen and (min-width: 795px) {
+    header, header ul {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 15px;
+    }
+
+    header .start-home, li:nth-child(1):hover~.animation {
+        left: 0;
+        width: 80px;
+    }
+
+    header .start-about, li:nth-child(2):hover~.animation {
+        left: 95px;
+        width: 118px;
+    }
+
+    header .start-services, li:nth-child(3):hover~.animation {
+        left: calc(95px + 118px + 30px);
+        width: 108px;
+    }
+
+    header .start-ourteam, li:nth-child(4):hover~.animation {
+        left: calc(95px + 118px + 108px + 60px);
+        width: 115px;
+    }
+
+    header .start-contact, li:nth-child(5):hover~.animation {
+        left: calc(95px + 118px + 108px + 115px + 90px);
+        width: 100px;
+    }
+
+}
+
+/* Our Team Queries */
+
+@media screen and (max-width: 719px) {
+    .team-container {
+        text-align: center;
+    }
+}
